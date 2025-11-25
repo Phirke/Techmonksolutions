@@ -1,0 +1,11 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.techmonksolutions.com/$1 [R,L]
+
+# testing node installation
+# RewriteEngine On
+# DirectoryIndex disabled
+# RewriteRule ^$ http://127.0.0.1:3000/ [P,L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
